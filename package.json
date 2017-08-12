@@ -1,0 +1,26 @@
+{
+  "name": "vue-media-query-mixin",
+  "version": "0.0.1",
+  "description": "A vue mixin to get current media query, xs, sm, md and lg.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/jofftiquez/vue-media-query-mixin.git"
+  },
+  "keywords": [
+    "vue",
+    "vuejs",
+    "mixin",
+    "media",
+    "query"
+  ],
+  "author": "Jofferon Ramirez Tiquez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jofftiquez/vue-media-query-mixin/issues"
+  },
+  "homepage": "https://github.com/jofftiquez/vue-media-query-mixin#readme"
+}
