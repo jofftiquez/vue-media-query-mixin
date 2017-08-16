@@ -1,6 +1,6 @@
 export default {
   xs: {
-    max: 584
+    max: 767
   },
   sm: {
     min: 768,

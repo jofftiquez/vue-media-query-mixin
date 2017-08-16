@@ -1,9 +1,33 @@
 import vuetifyMediaQuery from './vuetify-media-query';
 import bootstrapMediaQuery from './bootstrap-media-query';
 
-const VueMediaMixin = {
+const VueMediaQueryMixin = {
   install(Vue, options) {
+
+    // var vmqm = Vue.component('vmqm', {
+    //   render(h){
+    //     return h(
+    //       'div', 
+    //       {
+    //         style: {
+    //           background: 'yellow',
+    //           position: 'fixed',
+    //           'z-index': 99999,
+    //           bottom: 0,
+    //           right: 0
+    //         }
+    //       }, 
+    //       [
+    //         h('small', `wXS - ${ this.wXS } | wSM - ${ this.wSM } | wMD - ${ this.wMD } | wLG - ${ this.wLG } | width - ${ this.windowWidth } |`)
+    //       ]
+    //     )
+    //   }
+    // });
+
     Vue.mixin({
+      // components: {
+      //   vmqm
+      // },
       data: function () {
         return {
           windowWidth: 0,
@@ -40,7 +64,7 @@ const VueMediaMixin = {
           if(options.framework === 'bootstrap') 
             mediaQuery = bootstrapMediaQuery;
 
-          this.wXS = w <= mediaQuery.xs.max;
+          this.wXS = w < mediaQuery.xs.max;
           this.wSM = w >= mediaQuery.sm.min && w < mediaQuery.sm.max;
           this.wMD = w >= mediaQuery.md.min && w < mediaQuery.md.max;
           this.wLG = w >= mediaQuery.lg.min;
@@ -59,4 +83,4 @@ const VueMediaMixin = {
   }
 };
 
-export default VueMediaMixin;
+export default VueMediaQueryMixin;
