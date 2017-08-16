@@ -1,6 +1,6 @@
 {
   "name": "vue-media-query-mixin",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A vue mixin to get current media query, xs, sm, md and lg.",
   "main": "index.js",
   "scripts": {
