@@ -1,16 +1,20 @@
 export default {
   xs: {
-    max: 767
+    max: 575
   },
   sm: {
-    min: 768,
-    max: 992
+    min: 576,
+    max: 767
   },
   md: {
-    min: 992,
-    max: 1200
+    min: 768,
+    max: 991
   },
   lg: {
+    min: 992,
+    max: 1999
+  },
+  xl: {
     min: 1200
   }
 }
