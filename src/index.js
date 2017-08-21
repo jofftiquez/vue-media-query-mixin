@@ -35,7 +35,8 @@ const VueMediaQueryMixin = {
           wXS: false,
           wSM: false,
           wMD: false,
-          wLG: false
+          wLG: false,
+          wXL: false
         }
       },
       mounted() {

@@ -15,6 +15,6 @@ export default {
     max: 1919
   },
   xl: {
-    min 1920,
+    min: 1920
   }
 }
