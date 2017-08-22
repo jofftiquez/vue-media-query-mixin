@@ -35,7 +35,8 @@ const VueMediaQueryMixin = {
           wXS: false,
           wSM: false,
           wMD: false,
-          wLG: false
+          wLG: false,
+          wXL: false
         }
       },
       mounted() {
@@ -67,7 +68,8 @@ const VueMediaQueryMixin = {
           this.wXS = w < mediaQuery.xs.max;
           this.wSM = w >= mediaQuery.sm.min && w < mediaQuery.sm.max;
           this.wMD = w >= mediaQuery.md.min && w < mediaQuery.md.max;
-          this.wLG = w >= mediaQuery.lg.min;
+          this.wLG = w >= mediaQuery.lg.min && w < mediaQuery.lg.max;
+          this.wXL = w >= mediaQuery.xl.min;
         },
 
         getWindowHeight(event) {
