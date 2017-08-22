@@ -58,4 +58,5 @@ this.wXS // boolean
 | `wSM` | `boolean` |
 | `wMD` | `boolean` |
 | `wLG` | `boolean` |
+| `wXL` | `boolean` |
 
