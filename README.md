@@ -1,5 +1,5 @@
 # vue-media-query-mixin
-A vue mixin to get current media query, xs, sm, md and lg.
+A vue mixin to get current media query, xs, sm, md and lg, xl.
 
 # Installation 
 
@@ -21,7 +21,7 @@ Vue.use(VueMediaQueryMixin, {framework:'vuetify'});
 
 ```
 
-I added the framework option because there are css framework that have different media query breakpoints. E.g. bootstrap's xs is `<=480` while on vuetify xs is `<=584`.
+I added the framework option because there are css framework that have different media query breakpoints. E.g. bootstrap's xs is `<=576` while on vuetify xs is `<=600`.
 
 **Frameworks Supported**
 
