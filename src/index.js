@@ -65,10 +65,10 @@ const VueMediaQueryMixin = {
           if(options.framework === 'bootstrap') 
             mediaQuery = bootstrapMediaQuery;
 
-          this.wXS = w < mediaQuery.xs.max;
-          this.wSM = w >= mediaQuery.sm.min && w < mediaQuery.sm.max;
-          this.wMD = w >= mediaQuery.md.min && w < mediaQuery.md.max;
-          this.wLG = w >= mediaQuery.lg.min && w < mediaQuery.lg.max;
+          this.wXS = w <= mediaQuery.xs.max;
+          this.wSM = w >= mediaQuery.sm.min && w <= mediaQuery.sm.max;
+          this.wMD = w >= mediaQuery.md.min && w <= mediaQuery.md.max;
+          this.wLG = w >= mediaQuery.lg.min && w <= mediaQuery.lg.max;
           this.wXL = w >= mediaQuery.xl.min;
         },
 
